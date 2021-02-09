@@ -1,0 +1,19 @@
+command=""
+while True:
+    command=input('>' ).lower()
+    if command=='help':
+        print("""
+start=Start the car.
+stop=stop the car.
+quit=exit.
+         """)
+    elif command=='start':
+        print("Start the car")
+        
+    elif command=='stop':
+        print("stop the car")
+    elif command=='quit':
+        print("lock down your car")
+        break
+    else:
+        print("I don't understand")
