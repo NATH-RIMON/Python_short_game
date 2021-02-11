@@ -1,0 +1,10 @@
+secrect_number=9
+count=0
+while count<=3:
+    count+=1
+    Guess=int(input("Guess your Number : "))
+    if Guess==secrect_number:
+        print("You win")
+        break
+    else:
+        print("You loos")

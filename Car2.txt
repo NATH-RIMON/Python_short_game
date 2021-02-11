@@ -1,0 +1,30 @@
+massage=""
+started=False
+while True:
+    massage=input("press keyword: ").lower()
+    if massage=="start":
+
+        if started:
+            print("The car already started")
+        else :
+            started=True
+            print("The car Start")
+    elif massage=="stop":
+        if not started:
+            print("The car already stopped")
+        else:
+            started=False
+            print("The car Stopped")
+
+    elif massage=="help":
+        print("""
+Enter your choise:
+       stop=Car stopped
+       Start=The car Startted
+       Exit =over 
+        """)
+    elif massage=="exit":
+        print("Good bye")
+        break
+    else:
+        print("I don't Understand")
